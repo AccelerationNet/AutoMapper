@@ -32,7 +32,7 @@ task release {
 }
 
 task compile -depends clean { 
-    exec { msbuild /t:Clean /t:Build /p:Configuration=$config /v:q /p:NoWarn=1591 /nologo $source_dir\AutoMapper.sln }
+    exec { msbuild /t:Clean /t:Build /p:Configuration=$config /v:q /p:NoWarn=1591 /nologo $source_dir\AutoMapper-net4.sln }
 }
 
 task commonAssemblyInfo {
